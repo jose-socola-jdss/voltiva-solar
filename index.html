@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voltiva Solar | Energía Solar Residencial y Microcentrales Inteligentes</title>
+  <meta name="description" content="Diseño e instalación de sistemas solares fotovoltaicos premium para residencias y comercios. Reduce tu factura eléctrica y toma el control de tu energía." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <script defer src="./main.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="solar-light-theme">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  
+  <div class="site-shell">
+    <!-- Floating Header -->
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#" aria-label="Voltiva Solar Inicio">
+          <svg class="brand-logo" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="10" fill="url(#voltiva-logo-grad)" />
+            <circle cx="18" cy="18" r="9" stroke="#fff" stroke-width="2" />
+            <line x1="18" y1="18" x2="18" y2="10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="18" y1="18" x2="24" y2="18" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" />
+            <defs>
+              <linearGradient id="voltiva-logo-grad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f59e0b" />
+                <stop offset="1" stop-color="#b45309" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-name">Voltiva<span>Solar</span></span>
+        </a>
+        
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menú de navegación" id="menu-button">
+          <span class="hamburger-icon"></span>
+        </button>
+        
+        <nav class="nav-links" id="nav-menu" aria-label="Navegación principal">
+          <a href="#beneficios">Beneficios</a>
+          <a href="#calculadora">Calculadora</a>
+          <a href="#proceso">Metodología</a>
+          <a class="btn-primary-header" href="#cotizar">Simular Viabilidad</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="contenido">
+      
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="solar-glow"></div>
+        <div class="container hero-container-centered">
+          <span class="badge">Autonomía Energética Residencial</span>
+          <h1 class="hero-title">Energía limpia. Diseñada para el hogar inteligente.</h1>
+          <p class="hero-lead">Instalamos microcentrales solares fotovoltaicas premium que eliminan la dependencia de las tarifas eléctricas tradicionales, ofreciendo respaldo autónomo ante cortes de red.</p>
+          
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cotizar">Solicitar Estudio Técnico</a>
+            <a class="btn btn-secondary" href="#calculadora">Calcular Flujo Solar</a>
+          </div>
+          
+          <div class="hero-solar-chart">
+            <!-- Animated SVG Clock/Solar Panel concept -->
+            <svg class="solar-sun-tracker" width="280" height="280" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="80" stroke="rgba(245, 158, 11, 0.08)" stroke-width="1" />
+              <circle cx="100" cy="100" r="60" stroke="rgba(245, 158, 11, 0.12)" stroke-width="1.5" stroke-dasharray="4 6" />
+              <!-- Rotating Sun -->
+              <g class="rotating-sun">
+                <circle cx="100" cy="40" r="14" fill="url(#sun-gradient)" />
+                <circle cx="100" cy="40" r="22" stroke="rgba(245, 158, 11, 0.25)" stroke-width="1" />
+              </g>
+              <!-- House Icon in the center -->
+              <rect x="85" y="95" width="30" height="25" rx="3" fill="#1f2937" />
+              <path d="M80 97L100 80L120 97" stroke="#1f2937" stroke-width="3" stroke-linecap="round" />
+              <path class="solar-panel-ray" d="M100 40V70" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 4" />
+              <defs>
+                <linearGradient id="sun-gradient" x1="86" y1="26" x2="114" y2="54" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fbbf24" />
+                  <stop offset="1" stop-color="#f59e0b" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="chart-status">
+              <strong id="live-solar-yield">0.0 kW</strong>
+              <span>Producción Solar Estimada</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section (Bento Grid) -->
+      <section class="benefits-section" id="beneficios">
+        <div class="container">
+          <div class="section-header-left">
+            <span class="section-badge">Beneficios Tecnológicos</span>
+            <h2 class="section-title">El fin de las facturas de consumo variable.</h2>
+          </div>
+          
+          <div class="bento-grid">
+            <article class="bento-card col-span-2 shadow-card flex-row-card">
+              <div class="card-text">
+                <span class="card-kicker">01 / Ahorro</span>
+                <h3>Independencia Total de Tarifas</h3>
+                <p>El costo de la red pública aumenta un 7.4% promedio anual. Con Voltiva, congelas tu costo de generación para los próximos 25 años.</p>
+              </div>
+              <div class="card-visual">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                  <path d="M20 100H100" stroke="#1f2937" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M30 100V80" stroke="#1f2937" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M50 100V60" stroke="#1f2937" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M70 100V40" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M90 100V20" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+                  <circle cx="90" cy="20" r="6" fill="#f59e0b"/>
+                </svg>
+              </div>
+            </article>
+
+            <article class="bento-card shadow-card">
+              <span class="card-kicker">02 / Respaldo</span>
+              <h3>Baterías Inteligentes</h3>
+              <p>Los sistemas Híbridos detectan apagones en microsegundos y conmutan al banco de baterías sin interrumpir el suministro.</p>
+            </article>
+
+            <article class="bento-card shadow-card">
+              <span class="card-kicker">03 / Plusvalía</span>
+              <h3>Incremento Inmobiliario</h3>
+              <p>Las propiedades residenciales con sistemas solares integrados aumentan su valor comercial hasta un 4.1% sobre tasación.</p>
+            </article>
+
+            <article class="bento-card col-span-2 shadow-card flex-row-card">
+              <div class="card-text">
+                <span class="card-kicker">04 / Red</span>
+                <h3>Inyección de Excedentes (Net Billing)</h3>
+                <p>Devuelve a la red eléctrica tradicional la energía que tus paneles produzcan y que tu hogar no consuma, acumulando créditos a tu favor en tu factura mensual.</p>
+              </div>
+              <div class="card-visual">
+                <svg class="rotating-network" width="100" height="100" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="30" stroke="#d1d5db" stroke-width="2" />
+                  <circle cx="50" cy="20" r="8" fill="#1f2937" />
+                  <circle cx="80" cy="50" r="8" fill="#f59e0b" />
+                  <circle cx="50" cy="80" r="8" fill="#1f2937" />
+                  <circle cx="20" cy="50" r="8" fill="#1f2937" />
+                </g>
+                </svg>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Calculator Section (Custom Web Component with flow diagram) -->
+      <section class="calculator-section" id="calculadora">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="section-badge">Dashboard de Generación</span>
+            <h2 class="section-title">Calcula y Visualiza tu Flujo de Ahorro</h2>
+            <p class="section-lead">Ajusta tu gasto eléctrico actual y selecciona tu modalidad de sistema para ver cómo fluye la energía en tiempo real.</p>
+          </div>
+          
+          <div class="calculator-dashboard-layout">
+            <voltiva-calculator></voltiva-calculator>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proceso Section -->
+      <section class="process-section" id="proceso">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="section-badge">Metodología</span>
+            <h2 class="section-title">Ingeniería en Tres Fases</h2>
+          </div>
+          
+          <div class="process-timeline">
+            <div class="timeline-step">
+              <span class="step-num">01</span>
+              <h3>Estudio de Techo y Sombras</h3>
+              <p>Analizamos mediante modelado 3D satelital la radiación real de tu cubierta, calculando inclinación de paneles para evitar sombras estacionales.</p>
+            </div>
+            
+            <div class="timeline-step">
+              <span class="step-num">02</span>
+              <h3>Ingeniería e Instalación</h3>
+              <p>Dimensionamos las protecciones eléctricas, inversores y soportes de aluminio anodizado. Montaje completado por técnicos calificados en 48 horas.</p>
+            </div>
+            
+            <div class="timeline-step">
+              <span class="step-num">03</span>
+              <h3>Homologación e Interconexión</h3>
+              <p>Gestionamos el expediente ante la entidad distribuidora para habilitar el medidor bidireccional y la inyección formal de excedentes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section" id="cotizar">
+        <div class="container">
+          <div class="cta-card">
+            <div class="cta-card-glow"></div>
+            <span class="badge light">Diagnóstico preliminar</span>
+            <h2>Reduce tu huella y tus facturas hoy mismo</h2>
+            <p>Envíanos una copia digital de tu último recibo eléctrico. Nuestro equipo de ingeniería realizará una simulación 3D de cobertura fotovoltaica sin costo.</p>
+            <div class="cta-actions">
+              <a class="btn btn-white" href="mailto:hola@voltivasolar.test?subject=Estudio%20Solar%20Gratuito%20Blyp">Solicitar Simulación 3D de Cobertura</a>
+              <span class="cta-note">Estudios completados en menos de 24 horas laborables.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#">
+            <svg class="brand-logo" width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="8" fill="#f59e0b" />
+              <circle cx="18" cy="18" r="8" stroke="#fff" stroke-width="2" />
+            </svg>
+            <span class="brand-name">Voltiva<span>Solar</span></span>
+          </a>
+          <p class="brand-subtext">Diseño, ingeniería y homologación de sistemas fotovoltaicos interconectados de alta eficiencia.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explorar</h4>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#calculadora">Calculadora</a>
+          <a href="#proceso">Metodología</a>
+        </div>
+        <div class="footer-copy">
+          <p>© <span id="year"></span> Voltiva Solar. Todos los derechos reservados.</p>
+          <p class="designed-by">Desarrollado bajo el estándar de precisión digital Blyp.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
